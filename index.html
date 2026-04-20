@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio | Welcome</title>
+    <title>Angel Martinez-Sanchez | PhD Student & Researcher</title>
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,11 @@
 <body>
     <header>
         <nav class="container">
-            <div class="logo">Portfolio</div>
+            <div class="logo">AMS</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -30,11 +32,11 @@
     <main>
         <section id="hero" class="hero">
             <div class="container hero-content">
-                <h1>Hi, I'm <span class="highlight">A. Martinez</span></h1>
-                <p>Welcome to my corner of the internet. I'm a developer and researcher focused on building elegant solutions.</p>
+                <h1>Angel <span class="highlight">Martinez-Sanchez</span></h1>
+                <p>PhD Student in Electrical Engineering & Computer Science at UC Merced. Researcher focused on Autonomous Vehicles and AI.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn primary">View My Work</a>
-                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                    <a href="AMartinezSanchez-CV.pdf" class="btn secondary" target="_blank">Download CV</a>
                 </div>
             </div>
         </section>
@@ -43,41 +45,81 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>I'm currently working on some exciting projects involving software engineering and design. I love exploring new technologies and finding creative ways to solve complex problems.</p>
-                    <p>When I'm not coding, you can find me exploring the outdoors or working on personal projects.</p>
+                    <p>I am a PhD student at the <strong>University of California, Merced</strong>, and a member of the Mi³ Laboratory under Prof. Ross Greer. My research focuses on autonomous vehicles, specifically in vision and language integration for driving scene safety.</p>
+                    <p>With a background spanning NASA, Army DEVCOM, and data science for tribal epidemiology, I enjoy tackling complex problems that combine robotics, machine learning, and real-world impact.</p>
+                    <p><strong>Skills:</strong> Python, C/C++, SQL, ROS, SLAM, PyTorch, TensorFlow, OpenCV, Scikit-learn.</p>
                 </div>
                 <div class="about-image">
-                    <div class="img-placeholder"></div>
+                    <div class="education-card">
+                        <h3>Education</h3>
+                        <div class="edu-item">
+                            <strong>UC Merced</strong>
+                            <span>PhD in EECS (2025 - Present)</span>
+                        </div>
+                        <div class="edu-item">
+                            <strong>CSU Chico</strong>
+                            <span>BS/MS in Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="bg-light section">
+            <div class="container">
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>NASA Glenn Research Center</h3>
+                        <span class="date">May 2025 – Aug 2025</span>
+                        <p>Research Scientist Intern. Developed instrumentation and controls database for NASA's Lunar Fission Surface Power project.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>California Tribal Epidemiology Center</h3>
+                        <span class="date">Jan 2025 – April 2025</span>
+                        <p>Data Science Intern. Analyzed tribal health data and automated data collection processes.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Army DEVCOM Soldier Center</h3>
+                        <span class="date">May 2024 – Aug 2024</span>
+                        <p>AI Research Intern. Researched application of AI and machine learning models within game engines for Army simulations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="container section">
+            <h2 class="section-title">Research Publications</h2>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <span class="pub-tag">ESV 2026</span>
+                    <p><strong>Vision and Language: Novel Representations and AI for Driving Scene Safety...</strong><br>Greer, Meskar, Martinez-Sanchez, et al.</p>
+                </div>
+                <div class="pub-item">
+                    <span class="pub-tag">IEEE IV 2026</span>
+                    <p><strong>Natural Language Instructions for Scene-Responsive Human-in-the-Loop Motion Planning...</strong><br>Martinez-Sanchez, Roy, Greer.</p>
+                </div>
+                <div class="pub-item">
+                    <span class="pub-tag">AReC 2026</span>
+                    <p><strong>Mission Planning Simulation and Design Software Scaling...</strong><br>Siewert, Martinez-Sanchez, et al.</p>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="bg-light section">
             <div class="container">
-                <h2 class="section-title">Latest Projects</h2>
+                <h2 class="section-title">Featured Projects</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <div class="project-img-placeholder"></div>
                         <div class="project-info">
-                            <h3>Project One</h3>
-                            <p>A brief description of this cool project and what technologies were used to build it.</p>
-                            <a href="#" class="text-link">Learn More &rarr;</a>
+                            <h3>F1TENTH Autonomous Racing</h3>
+                            <p>Built a 1/10-scale race car with multi-sensor stack (LiDAR, IMU, Camera). Developed perception-to-control pipeline using Adaptive Pure Pursuit.</p>
                         </div>
                     </div>
                     <div class="project-card">
-                        <div class="project-img-placeholder"></div>
                         <div class="project-info">
-                            <h3>Project Two</h3>
-                            <p>Another amazing project that highlights specific skills and achievements.</p>
-                            <a href="#" class="text-link">Learn More &rarr;</a>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-img-placeholder"></div>
-                        <div class="project-info">
-                            <h3>Project Three</h3>
-                            <p>One more project to round out the portfolio and show diversity in work.</p>
-                            <a href="#" class="text-link">Learn More &rarr;</a>
+                            <h3>Autonomous Janitorial Robot</h3>
+                            <p>Utilized TurtleBot3 and OpenMANIPULATOR-X to detect and pick up trash using SLAM and onboard perception.</p>
                         </div>
                     </div>
                 </div>
@@ -87,19 +129,21 @@
         <section id="contact" class="container section">
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
-                <p>Have a question or want to work together? Feel free to reach out!</p>
-                <a href="mailto:your.email@example.com" class="btn primary">Send an Email</a>
+                <p>Interested in collaboration or research discussion?</p>
+                <div class="contact-links">
+                    <a href="mailto:Martinezangel3698@gmail.com" class="btn primary">Email Me</a>
+                    <div class="social-icons">
+                        <a href="https://github.com/Angelmartinez-20">GitHub</a>
+                        <a href="https://linkedin.com/in/angelmartinez007">LinkedIn</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 A. Martinez. All rights reserved.</p>
-            <div class="social-links">
-                <a href="https://github.com/amartinez-sanchez">GitHub</a>
-                <a href="#">LinkedIn</a>
-            </div>
+            <p>&copy; 2026 Angel Martinez-Sanchez. All rights reserved.</p>
         </div>
     </footer>
 
