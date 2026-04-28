@@ -10,27 +10,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo"><span class="mono">&gt;_</span> AMS</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero -->
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar" id="sidebar">
+
+        <div class="sidebar-profile">
+            <div class="profile-pic" id="profilePic">
+                <img src="Images/profile_pic.jpg" alt="Angel Martinez-Sanchez">
+            </div>
+            <h2 class="sidebar-name">Angel<br><span>Martinez-Sanchez</span></h2>
+            <p class="sidebar-title">PhD Researcher</p>
+            <p class="sidebar-lab">Mi&sup3; Lab &middot; UC Merced</p>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#about"        class="nav-link"><span class="nav-num mono">01</span><span>About</span></a></li>
+                <li><a href="#research"      class="nav-link"><span class="nav-num mono">02</span><span>Research</span></a></li>
+                <li><a href="#experience"    class="nav-link"><span class="nav-num mono">03</span><span>Experience</span></a></li>
+                <li><a href="#publications"  class="nav-link"><span class="nav-num mono">04</span><span>Publications</span></a></li>
+                <li><a href="#projects"      class="nav-link"><span class="nav-num mono">05</span><span>Projects</span></a></li>
+                <li><a href="#contact"       class="nav-link"><span class="nav-num mono">06</span><span>Contact</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-social">
+                <a href="https://github.com/amartinez-sanchez" target="_blank" rel="noopener">
+                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58 0-.28-.01-1.04-.01-2.04-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/angelmartinez007" target="_blank" rel="noopener">
+                    <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
+                    LinkedIn
+                </a>
+                <a href="mailto:Martinezangel3698@gmail.com">
+                    <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 8 10-8"/></svg>
+                    Email
+                </a>
+            </div>
+            <a href="AMartinezSanchez-CV.pdf" class="sidebar-cv-btn" target="_blank">
+                <svg width="13" height="13" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"/></svg>
+                Download CV
+            </a>
+        </div>
+    </aside>
+
+    <!-- Mobile overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Mobile toggle button -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+    </button>
+
+    <main class="main-content">
+
+        <!-- ── Hero ── -->
         <section id="hero" class="hero">
             <canvas id="heroCanvas"></canvas>
             <div class="container hero-content">
@@ -48,29 +84,20 @@
                     <span class="tag">NLP / LLMs</span>
                 </div>
                 <div class="hero-btns">
-                    <a href="#research" class="btn primary">View Research</a>
+                    <a href="#about" class="btn primary">Explore My Work</a>
                     <a href="AMartinezSanchez-CV.pdf" class="btn outline" target="_blank">Download CV</a>
                 </div>
                 <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-num">5</span>
-                        <span class="stat-label">Publications</span>
-                    </div>
+                    <div class="stat"><span class="stat-num">5</span><span class="stat-label">Publications</span></div>
                     <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">3</span>
-                        <span class="stat-label">Research Internships</span>
-                    </div>
+                    <div class="stat"><span class="stat-num">3</span><span class="stat-label">Research Internships</span></div>
                     <div class="stat-divider"></div>
-                    <div class="stat">
-                        <span class="stat-num">4.0</span>
-                        <span class="stat-label">PhD GPA</span>
-                    </div>
+                    <div class="stat"><span class="stat-num">4.0</span><span class="stat-label">PhD GPA</span></div>
                 </div>
             </div>
         </section>
 
-        <!-- About -->
+        <!-- ── About ── -->
         <section id="about" class="section light-section">
             <div class="container">
                 <div class="section-label"><span class="mono">01 /</span> About</div>
@@ -78,7 +105,7 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>I am a PhD student in <strong>Electrical Engineering &amp; Computer Science</strong> at the <strong>University of California, Merced</strong>, and a member of the <strong>Mi&sup3; Laboratory</strong> (Merced Intelligent &amp; Interactive Imaging Lab) under Prof. Ross Greer. My research sits at the intersection of autonomous driving, computer vision, and natural language processing.</p>
-                        <p>Prior to my PhD, I earned both a BS and MS in Computer Science (and a BS in Computer Information Systems with a Minor in Business Administration) from <strong>California State University, Chico</strong>. I have hands-on research experience at <strong>NASA Glenn Research Center</strong> and <strong>Army DEVCOM</strong>, and I am a bilingual communicator &mdash; fluent in both English and Spanish.</p>
+                        <p>Prior to my PhD, I earned both a BS and MS in Computer Science (and a BS in Computer Information Systems with a Minor in Business Administration) from <strong>California State University, Chico</strong>. I have hands-on research experience at <strong>NASA Glenn Research Center</strong> and <strong>Army DEVCOM</strong>, and I am fluent in both English and Spanish.</p>
                         <p>Beyond research, I bring a unique background in management across restaurant, janitorial, and real estate industries &mdash; grounding my technical work with practical leadership and operational discipline.</p>
                         <div class="skills-section">
                             <div class="skill-group">
@@ -150,7 +177,7 @@
             </div>
         </section>
 
-        <!-- Research Areas -->
+        <!-- ── Research Areas ── -->
         <section id="research" class="section dark-section">
             <div class="container">
                 <div class="section-label light"><span class="mono">02 /</span> Research</div>
@@ -181,7 +208,7 @@
             </div>
         </section>
 
-        <!-- Experience -->
+        <!-- ── Experience ── -->
         <section id="experience" class="section light-section">
             <div class="container">
                 <div class="section-label"><span class="mono">03 /</span> Experience</div>
@@ -263,7 +290,7 @@
             </div>
         </section>
 
-        <!-- Publications -->
+        <!-- ── Publications ── -->
         <section id="publications" class="section alt-section">
             <div class="container">
                 <div class="section-label"><span class="mono">04 /</span> Publications</div>
@@ -272,8 +299,62 @@
                 <div class="pub-category">
                     <h3 class="pub-category-title">Conference Proceedings</h3>
                     <div class="pub-list">
+
+                        <!-- presort a -->
                         <div class="pub-item">
                             <div class="pub-num mono">01</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">IEEE ITSC 2026</span>
+                                    <span class="pub-venue pub-under-review">Under Review</span>
+                                </div>
+                                <h4>Vision-Language Work Zone Intelligence for Safety-Critical Speed Regulation of Mixed-Autonomy Vehicles in Dynamic Environments</h4>
+                                <p class="pub-authors"><strong>A. Martinez-Sanchez</strong>, K. Ng, W. Maia, L. Fleig, M. Keskar, E. Maquiling, Y. Tandon, P. Roy, M. M. Trivedi, and R. Greer</p>
+                            </div>
+                        </div>
+
+                        <!-- presort b -->
+                        <div class="pub-item">
+                            <div class="pub-num mono">02</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">IEEE ITSC 2026</span>
+                                    <span class="pub-venue pub-under-review">Under Review</span>
+                                </div>
+                                <h4>Automated Data Curation Using GPS &amp; NLP to Generate Instruction-Action Pairs for Autonomous Vehicle Vision-Language Navigation Datasets</h4>
+                                <p class="pub-authors"><strong>A. Martinez-Sanchez</strong>, E. Maquiling, J. G. Tapia Lopez, G. Roque, and R. Greer</p>
+                            </div>
+                        </div>
+
+                        <!-- presort c -->
+                        <div class="pub-item">
+                            <div class="pub-num mono">03</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">ESV 2026</span>
+                                    <span class="pub-venue">Toronto, ON, Canada</span>
+                                </div>
+                                <h4>Looking and Listening Inside and Outside: Multimodal Artificial Intelligence Systems for Driver Safety Assessment and Intelligent Vehicle Decision-Making</h4>
+                                <p class="pub-authors">R. Greer, L. Fleig, M. Keskar, E. Maquiling, G. Tapia Lopez, <strong>A. Martinez-Sanchez</strong>, P. Roy, J. Rattigan, M. Sur, A. Vidrio, T. Marcotte, and M. Trivedi</p>
+                            </div>
+                        </div>
+
+                        <!-- presort d -->
+                        <div class="pub-item">
+                            <div class="pub-num mono">04</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">ESV 2026</span>
+                                    <span class="pub-venue">Toronto, ON, Canada</span>
+                                </div>
+                                <h4>Vision and Language: Novel Representations and Artificial Intelligence for Driving Scene Safety Assessment and Autonomous Vehicle Planning</h4>
+                                <p class="pub-authors">R. Greer, M. Keskar, <strong>A. Martinez-Sanchez</strong>, P. Roy, S. Shriram, and M. Trivedi</p>
+                            </div>
+                        </div>
+
+                        <!-- presort e -->
+                        <div class="pub-item">
+                            <div class="pub-num mono">05</div>
                             <div class="pub-body">
                                 <div class="pub-meta">
                                     <span class="pub-tag">IEEE IV 2026</span>
@@ -281,35 +362,25 @@
                                 </div>
                                 <h4>Natural Language Instructions for Scene-Responsive Human-in-the-Loop Motion Planning in Autonomous Driving using Vision-Language-Action Models</h4>
                                 <p class="pub-authors"><strong>A. Martinez-Sanchez</strong>, P. Roy, and R. Greer</p>
-                                <div class="pub-topics"><span>Autonomous Vehicles</span><span>Motion Planning</span><span>VLMs</span><span>NLP</span></div>
                             </div>
                         </div>
+
+                        <!-- no presort -->
                         <div class="pub-item">
-                            <div class="pub-num mono">02</div>
-                            <div class="pub-body">
-                                <div class="pub-meta">
-                                    <span class="pub-tag">ESV 2026</span>
-                                    <span class="pub-venue pub-under-review">Under Review</span>
-                                </div>
-                                <h4>Vision and Language: Novel Representations and Artificial Intelligence for Driving Scene Safety Assessment and Autonomous Vehicle Planning</h4>
-                                <p class="pub-authors">R. Greer, M. Keskar, <strong>A. Martinez-Sanchez</strong>, P. Roy, S. Shriram, and M. Trivedi</p>
-                                <div class="pub-topics"><span>Computer Vision</span><span>VLMs</span><span>Driving Safety</span></div>
-                            </div>
-                        </div>
-                        <div class="pub-item">
-                            <div class="pub-num mono">03</div>
+                            <div class="pub-num mono">06</div>
                             <div class="pub-body">
                                 <div class="pub-meta">
                                     <span class="pub-tag">IEEE AReC 2026</span>
                                     <span class="pub-venue">Big Sky, MT, USA</span>
                                 </div>
                                 <h4>Mission Planning Simulation and Design Software Scaling for Shared and Distributed Memory Computing</h4>
-                                <p class="pub-authors">S. Siewert, <strong>A. Martinez-Sanchez</strong>, C. Dhamange, J. Collins, and S. D. L. Jr.</p>
-                                <div class="pub-topics"><span>Robotics</span><span>Mission Planning</span><span>Simulation</span><span>HPC</span></div>
+                                <p class="pub-authors">S. Siewert, <strong>A. Martinez-Sanchez</strong>, C. Dhamange, J. Collins, and S. D. Littleton Jr.</p>
                             </div>
                         </div>
+
+                        <!-- no presort -->
                         <div class="pub-item">
-                            <div class="pub-num mono">04</div>
+                            <div class="pub-num mono">07</div>
                             <div class="pub-body">
                                 <div class="pub-meta">
                                     <span class="pub-tag">CSU Conference 2024</span>
@@ -317,9 +388,9 @@
                                 </div>
                                 <h4>Optimization Analysis for the Variational Quantum EigenSolver</h4>
                                 <p class="pub-authors"><strong>A. M. Martinez</strong> and J. Raigoza</p>
-                                <div class="pub-topics"><span>Quantum Computing</span><span>Optimization</span></div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -331,19 +402,19 @@
                             <div class="pub-body">
                                 <div class="pub-meta">
                                     <span class="pub-tag">FSP Webinar 2025</span>
-                                    <span class="pub-venue">NASA</span>
+                                    <span class="pub-venue">NASA Glenn Research Center</span>
                                 </div>
                                 <h4>NASA 40 kW Fission Surface Power I and C Technology Development Path</h4>
-                                <p class="pub-authors">R. Okojie, T. Benko, T. Steiner, K. Aguirre, C. Barth, D. Ezell, <strong>A. Martinez-Sanchez</strong>, et al.</p>
-                                <div class="pub-topics"><span>Space Technology</span><span>Nuclear Power</span><span>Instrumentation</span></div>
+                                <p class="pub-authors">R. Okojie, T. Benko, T. Steiner, K. Aguirre, C. Barth, D. Ezell, <strong>A. Martinez-Sanchez</strong>, R. Bruckner, J. Leblanc, and J. Caffrey</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Projects -->
+        <!-- ── Projects ── -->
         <section id="projects" class="section light-section">
             <div class="container">
                 <div class="section-label"><span class="mono">05 /</span> Projects</div>
@@ -375,7 +446,7 @@
             </div>
         </section>
 
-        <!-- Contact -->
+        <!-- ── Contact ── -->
         <section id="contact" class="section dark-section">
             <div class="container contact-content">
                 <div class="section-label light"><span class="mono">06 /</span> Contact</div>
@@ -387,20 +458,21 @@
                 </div>
                 <div class="social-icons">
                     <a href="https://github.com/Angelmartinez-20" target="_blank" rel="noopener">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58 0-.28-.01-1.04-.01-2.04-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58 0-.28-.01-1.04-.01-2.04-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22 0 1.6-.01 2.9-.01 3.29 0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
                         GitHub
                     </a>
                     <a href="https://linkedin.com/in/angelmartinez007" target="_blank" rel="noopener">
-                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46C23.2 24 24 23.23 24 22.28V1.72C24 .77 23.2 0 22.23 0z"/></svg>
                         LinkedIn
                     </a>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <div class="container footer-content">
+        <div class="footer-inner">
             <p><span class="mono">&copy;</span> 2026 Angel Martinez-Sanchez &middot; PhD Researcher &middot; Autonomous Vehicles</p>
         </div>
     </footer>
