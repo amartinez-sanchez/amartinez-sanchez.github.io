@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Angel Martinez-Sanchez | Autonomous Vehicles Researcher</title>
+    <title>Angel Martinez-Sanchez | PhD Researcher &middot; Autonomous Vehicles</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="container">
-            <div class="logo">AMS</div>
+            <div class="logo"><span class="mono">&gt;_</span> AMS</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#research">Research</a></li>
@@ -32,86 +32,128 @@
     <main>
         <!-- Hero -->
         <section id="hero" class="hero">
+            <canvas id="heroCanvas"></canvas>
             <div class="container hero-content">
-                <div class="hero-badge">PhD Researcher &middot; Mi&sup3; Lab @ UC Merced</div>
-                <h1>Angel <span class="highlight">Martinez-Sanchez</span></h1>
-                <p class="hero-tagline">Autonomous Vehicles Researcher</p>
-                <p class="hero-sub">Building intelligent systems that perceive, reason, and act &mdash; from vision-language models for driving scene safety to real-time motion planning for autonomous vehicles.</p>
+                <div class="hero-badge"><span class="mono">PhD Researcher</span> &middot; Mi&sup3; Lab @ UC Merced</div>
+                <h1>Angel<br><span class="gradient-text">Martinez-Sanchez</span></h1>
+                <p class="hero-tagline">Building Intelligent Autonomous Systems</p>
+                <p class="hero-sub">From vision-language models for driving scene safety to real-time motion planning &mdash; I build the perception and reasoning layer that makes machines see, understand, and act.</p>
                 <div class="research-tags">
                     <span class="tag tag-primary">Autonomous Vehicles</span>
                     <span class="tag">Computer Vision</span>
                     <span class="tag">Robotics</span>
                     <span class="tag">Deep Learning</span>
+                    <span class="tag">VLMs</span>
                     <span class="tag">SLAM</span>
                     <span class="tag">NLP / LLMs</span>
                 </div>
                 <div class="hero-btns">
                     <a href="#research" class="btn primary">View Research</a>
-                    <a href="AMartinezSanchez-CV.pdf" class="btn secondary" target="_blank">Download CV</a>
+                    <a href="AMartinezSanchez-CV.pdf" class="btn outline" target="_blank">Download CV</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-num">5</span>
+                        <span class="stat-label">Publications</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">3</span>
+                        <span class="stat-label">Research Internships</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-num">4.0</span>
+                        <span class="stat-label">PhD GPA</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- About -->
-        <section id="about" class="container section">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a PhD student at the <strong>University of California, Merced</strong> and a member of the <strong>Mi&sup3; Laboratory</strong> under Prof. Ross Greer. My research sits at the intersection of autonomous driving, computer vision, and natural language processing &mdash; specifically exploring how vision-language models can improve driving scene understanding and safety.</p>
-                    <p>Prior to my PhD, I gained hands-on experience at <strong>NASA Glenn Research Center</strong> and <strong>Army DEVCOM</strong>, and built robotics systems spanning SLAM-based navigation and autonomous manipulation.</p>
-                    <p>I am passionate about bridging cutting-edge AI research and real-world deployment in safety-critical autonomous systems.</p>
-                    <div class="skills-section">
-                        <div class="skill-group">
-                            <h4>Languages</h4>
-                            <div class="skill-tags">
-                                <span>Python</span><span>C/C++</span><span>SQL</span><span>MATLAB</span>
+        <section id="about" class="section light-section">
+            <div class="container">
+                <div class="section-label"><span class="mono">01 /</span> About</div>
+                <h2 class="section-title">Who I Am</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a PhD student in <strong>Electrical Engineering &amp; Computer Science</strong> at the <strong>University of California, Merced</strong>, and a member of the <strong>Mi&sup3; Laboratory</strong> (Merced Intelligent &amp; Interactive Imaging Lab) under Prof. Ross Greer. My research sits at the intersection of autonomous driving, computer vision, and natural language processing.</p>
+                        <p>Prior to my PhD, I earned both a BS and MS in Computer Science (and a BS in Computer Information Systems with a Minor in Business Administration) from <strong>California State University, Chico</strong>. I have hands-on research experience at <strong>NASA Glenn Research Center</strong> and <strong>Army DEVCOM</strong>, and I am a bilingual communicator &mdash; fluent in both English and Spanish.</p>
+                        <p>Beyond research, I bring a unique background in management across restaurant, janitorial, and real estate industries &mdash; grounding my technical work with practical leadership and operational discipline.</p>
+                        <div class="skills-section">
+                            <div class="skill-group">
+                                <h4>Coding</h4>
+                                <div class="skill-tags">
+                                    <span>Python</span><span>C/C++</span><span>SQL</span><span>CUDA</span><span>OpenMP</span><span>MPI</span><span>JavaScript</span><span>MATLAB</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Frameworks &amp; Tools</h4>
-                            <div class="skill-tags">
-                                <span>PyTorch</span><span>TensorFlow</span><span>OpenCV</span><span>ROS / ROS2</span><span>Scikit-learn</span>
+                            <div class="skill-group">
+                                <h4>Robotics &amp; Vision</h4>
+                                <div class="skill-tags">
+                                    <span>ROS / ROS2</span><span>SLAM</span><span>OpenCV</span><span>PyTorch</span><span>TensorFlow</span><span>RViz</span><span>Sensor Fusion</span><span>LiDAR</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="skill-group">
-                            <h4>Domains</h4>
-                            <div class="skill-tags">
-                                <span>SLAM</span><span>Sensor Fusion</span><span>Perception</span><span>Motion Planning</span><span>VLMs</span><span>LiDAR</span>
+                            <div class="skill-group">
+                                <h4>Data Science</h4>
+                                <div class="skill-tags">
+                                    <span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span><span>Patsy</span>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-sidebar">
-                    <div class="info-card">
-                        <h3>Education</h3>
-                        <div class="edu-item">
-                            <div class="edu-icon">&#127891;</div>
-                            <div>
-                                <strong>PhD in EECS</strong>
-                                <span>University of California, Merced</span>
-                                <span class="edu-date">2025 &ndash; Present</span>
-                            </div>
-                        </div>
-                        <div class="edu-item">
-                            <div class="edu-icon">&#127891;</div>
-                            <div>
-                                <strong>BS / MS in Computer Science</strong>
-                                <span>California State University, Chico</span>
+                            <div class="skill-group">
+                                <h4>Languages</h4>
+                                <div class="skill-tags">
+                                    <span>English (Fluent)</span><span>Spanish (Fluent)</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="info-card">
-                        <h3>Research Group</h3>
-                        <p class="info-card-text"><strong>Mi&sup3; Lab</strong> &mdash; Merced Intelligent &amp; Interactive Imaging Laboratory</p>
-                        <p class="info-card-text info-advisor">Advisor: Prof. Ross Greer</p>
+                    <div class="about-sidebar">
+                        <div class="info-card">
+                            <h3>Education</h3>
+                            <div class="edu-item">
+                                <div class="edu-icon">&#127891;</div>
+                                <div>
+                                    <strong>PhD &mdash; EECS</strong>
+                                    <span>University of California, Merced</span>
+                                    <span class="edu-date">2025 &ndash; Present &middot; GPA 4.00</span>
+                                    <div class="edu-detail">TA: Digital Image Processing &middot; Cryptography &middot; Computer Organization</div>
+                                </div>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-icon">&#127891;</div>
+                                <div>
+                                    <strong>BS / MS &mdash; Computer Science</strong>
+                                    <span>California State University, Chico</span>
+                                    <span class="edu-date">2022 &ndash; 2025 &middot; GPA 3.89</span>
+                                    <div class="edu-detail">Also: BS in Computer Information Systems &middot; Minor in Business Administration</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <h3>Research Group</h3>
+                            <p class="info-card-text"><strong>Mi&sup3; Lab</strong> &mdash; Merced Intelligent &amp; Interactive Imaging Laboratory</p>
+                            <p class="info-card-text info-advisor">Advisor: Prof. Ross Greer</p>
+                        </div>
+                        <div class="info-card contact-card">
+                            <h3>Contact</h3>
+                            <a href="mailto:Martinezangel3698@gmail.com" class="contact-item">
+                                <span class="contact-icon">&#9993;</span>
+                                <span>Martinezangel3698@gmail.com</span>
+                            </a>
+                            <a href="tel:+15309216202" class="contact-item">
+                                <span class="contact-icon">&#9990;</span>
+                                <span>+1 (530) 921&ndash;6202</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Research Areas -->
-        <section id="research" class="bg-dark section">
+        <section id="research" class="section dark-section">
             <div class="container">
+                <div class="section-label light"><span class="mono">02 /</span> Research</div>
                 <h2 class="section-title light">Research Areas</h2>
                 <div class="research-grid">
                     <div class="research-card featured">
@@ -127,120 +169,216 @@
                     </div>
                     <div class="research-card">
                         <div class="research-icon">&#129302;</div>
-                        <h3>Robotics</h3>
+                        <h3>Robotics &amp; SLAM</h3>
                         <p>Sensor fusion, SLAM, and autonomous navigation. Experience with ROS/ROS2, LiDAR, IMU, and camera-based perception stacks for mobile and manipulator robots.</p>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">&#129504;</div>
-                        <h3>Deep Learning &amp; LLMs</h3>
-                        <p>Designing neural architectures for safety-critical applications. Exploring natural language instructions for responsive, interpretable motion planning in autonomous systems.</p>
+                        <h3>VLMs &amp; LLMs</h3>
+                        <p>Designing neural architectures for safety-critical applications. Exploring vision-language-action models and natural language instructions for interpretable, scene-responsive motion planning.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Experience -->
-        <section id="experience" class="container section">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>NASA Glenn Research Center</h3>
-                            <span class="org-label">Research Scientist Intern</span>
+        <section id="experience" class="section light-section">
+            <div class="container">
+                <div class="section-label"><span class="mono">03 /</span> Experience</div>
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>NASA Glenn Research Center</h3>
+                                    <span class="org-label">Research Scientist Intern</span>
+                                </div>
+                                <span class="date">May &ndash; Aug 2025</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Designed, developed, and populated an Instrumentation and Controls database for NASA&rsquo;s Lunar Fission Surface Power project</li>
+                                <li>Wired multichip modules, followed by pre-assembly and testing for functionality</li>
+                                <li>Performed wafer-level electrical characterization of SiC integrated pressure/temperature sensors inside and outside the cleanroom</li>
+                            </ul>
+                            <div class="timeline-tags"><span>Systems Engineering</span><span>Database Design</span><span>Space Technology</span><span>SiC Sensors</span></div>
                         </div>
-                        <span class="date">May &ndash; Aug 2025</span>
                     </div>
-                    <p>Developed instrumentation and controls database for NASA&rsquo;s Lunar Fission Surface Power project, contributing to next-generation space power systems.</p>
-                    <div class="timeline-tags"><span>Systems Engineering</span><span>Database Design</span><span>Space Technology</span></div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>California Tribal Epidemiology Center</h3>
-                            <span class="org-label">Data Science Intern</span>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>California Tribal Epidemiology Center</h3>
+                                    <span class="org-label">Data Science Intern</span>
+                                </div>
+                                <span class="date">Jan &ndash; Apr 2025</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Analyzed tribal health data to identify trends and priorities, contributing to user-friendly dashboards and reports</li>
+                                <li>Automated data collection, reducing weekly manual work from 5 hours to a daily script &mdash; a 95%+ time savings</li>
+                                <li>Researched and suggested industry services aligned with project requirements</li>
+                            </ul>
+                            <div class="timeline-tags"><span>Data Science</span><span>Python</span><span>Pipeline Automation</span><span>Public Health</span></div>
                         </div>
-                        <span class="date">Jan &ndash; Apr 2025</span>
                     </div>
-                    <p>Analyzed tribal health data and automated data collection pipelines, enabling more efficient public health reporting and insight generation.</p>
-                    <div class="timeline-tags"><span>Data Science</span><span>Python</span><span>Pipeline Automation</span></div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div>
-                            <h3>Army DEVCOM Soldier Center</h3>
-                            <span class="org-label">AI Research Intern</span>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Army DEVCOM Soldier Center</h3>
+                                    <span class="org-label">AI Research Intern</span>
+                                </div>
+                                <span class="date">May &ndash; Aug 2024</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Explored model reuse and simulation interoperability through code generation using normalized system theory</li>
+                                <li>Researched AI behaviors and ML models within game engines for integration into Army simulations</li>
+                                <li>Delivered comprehensive briefings to team leaders, management, stakeholders, and the Director of Soldier Center</li>
+                            </ul>
+                            <div class="timeline-tags"><span>Machine Learning</span><span>Simulation</span><span>Game Engines</span><span>AI</span></div>
                         </div>
-                        <span class="date">May &ndash; Aug 2024</span>
                     </div>
-                    <p>Researched AI and machine learning models within game engines for Army simulation environments, bridging sim-to-real gaps for training autonomous agents.</p>
-                    <div class="timeline-tags"><span>Machine Learning</span><span>Simulation</span><span>Game Engines</span></div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3>Manager &mdash; Multiple Businesses</h3>
+                                    <span class="org-label">Restaurant &middot; Janitorial &middot; Real Estate</span>
+                                </div>
+                                <span class="date">Jun 2022 &ndash; May 2025</span>
+                            </div>
+                            <ul class="timeline-bullets">
+                                <li>Developed new food &amp; drink items based on local demographics and recorded daily sales for bookkeeping at Latinos Mexican Restaurant</li>
+                                <li>Drafted invoices, ensured quality control, and ordered supplies at Pro-Clean Maintenance</li>
+                                <li>Provided strategic input on leasing decisions, refined contracts across commercial and residential properties, and researched current tenant and landlord laws</li>
+                            </ul>
+                            <div class="timeline-tags"><span>Leadership</span><span>Operations</span><span>Finance</span><span>Contract Management</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Publications -->
-        <section id="publications" class="bg-light section">
+        <section id="publications" class="section alt-section">
             <div class="container">
-                <h2 class="section-title">Publications</h2>
-                <div class="pub-list">
-                    <div class="pub-item">
-                        <div class="pub-meta">
-                            <span class="pub-tag">IEEE IV 2026</span>
-                            <span class="pub-type">Conference Paper</span>
+                <div class="section-label"><span class="mono">04 /</span> Publications</div>
+                <h2 class="section-title">Research Publications</h2>
+
+                <div class="pub-category">
+                    <h3 class="pub-category-title">Conference Proceedings</h3>
+                    <div class="pub-list">
+                        <div class="pub-item">
+                            <div class="pub-num mono">01</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">IEEE IV 2026</span>
+                                    <span class="pub-venue">Detroit, MI, USA</span>
+                                </div>
+                                <h4>Natural Language Instructions for Scene-Responsive Human-in-the-Loop Motion Planning in Autonomous Driving using Vision-Language-Action Models</h4>
+                                <p class="pub-authors"><strong>A. Martinez-Sanchez</strong>, P. Roy, and R. Greer</p>
+                                <div class="pub-topics"><span>Autonomous Vehicles</span><span>Motion Planning</span><span>VLMs</span><span>NLP</span></div>
+                            </div>
                         </div>
-                        <h4>Natural Language Instructions for Scene-Responsive Human-in-the-Loop Motion Planning</h4>
-                        <p class="pub-authors">Martinez-Sanchez, A., Roy, S., &amp; Greer, R.</p>
-                        <div class="pub-topics"><span>Autonomous Vehicles</span><span>Motion Planning</span><span>NLP</span></div>
+                        <div class="pub-item">
+                            <div class="pub-num mono">02</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">ESV 2026</span>
+                                    <span class="pub-venue pub-under-review">Under Review</span>
+                                </div>
+                                <h4>Vision and Language: Novel Representations and Artificial Intelligence for Driving Scene Safety Assessment and Autonomous Vehicle Planning</h4>
+                                <p class="pub-authors">R. Greer, M. Keskar, <strong>A. Martinez-Sanchez</strong>, P. Roy, S. Shriram, and M. Trivedi</p>
+                                <div class="pub-topics"><span>Computer Vision</span><span>VLMs</span><span>Driving Safety</span></div>
+                            </div>
+                        </div>
+                        <div class="pub-item">
+                            <div class="pub-num mono">03</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">IEEE AReC 2026</span>
+                                    <span class="pub-venue">Big Sky, MT, USA</span>
+                                </div>
+                                <h4>Mission Planning Simulation and Design Software Scaling for Shared and Distributed Memory Computing</h4>
+                                <p class="pub-authors">S. Siewert, <strong>A. Martinez-Sanchez</strong>, C. Dhamange, J. Collins, and S. D. L. Jr.</p>
+                                <div class="pub-topics"><span>Robotics</span><span>Mission Planning</span><span>Simulation</span><span>HPC</span></div>
+                            </div>
+                        </div>
+                        <div class="pub-item">
+                            <div class="pub-num mono">04</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">CSU Conference 2024</span>
+                                    <span class="pub-venue">Channel Islands, CA</span>
+                                </div>
+                                <h4>Optimization Analysis for the Variational Quantum EigenSolver</h4>
+                                <p class="pub-authors"><strong>A. M. Martinez</strong> and J. Raigoza</p>
+                                <div class="pub-topics"><span>Quantum Computing</span><span>Optimization</span></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="pub-item">
-                        <div class="pub-meta">
-                            <span class="pub-tag">ESV 2026</span>
-                            <span class="pub-type">Conference Paper</span>
+                </div>
+
+                <div class="pub-category">
+                    <h3 class="pub-category-title">Conference Presentations</h3>
+                    <div class="pub-list">
+                        <div class="pub-item">
+                            <div class="pub-num mono">01</div>
+                            <div class="pub-body">
+                                <div class="pub-meta">
+                                    <span class="pub-tag">FSP Webinar 2025</span>
+                                    <span class="pub-venue">NASA</span>
+                                </div>
+                                <h4>NASA 40 kW Fission Surface Power I and C Technology Development Path</h4>
+                                <p class="pub-authors">R. Okojie, T. Benko, T. Steiner, K. Aguirre, C. Barth, D. Ezell, <strong>A. Martinez-Sanchez</strong>, et al.</p>
+                                <div class="pub-topics"><span>Space Technology</span><span>Nuclear Power</span><span>Instrumentation</span></div>
+                            </div>
                         </div>
-                        <h4>Vision and Language: Novel Representations and AI for Driving Scene Safety</h4>
-                        <p class="pub-authors">Greer, R., Meskar, M., Martinez-Sanchez, A., et al.</p>
-                        <div class="pub-topics"><span>Computer Vision</span><span>VLMs</span><span>Driving Safety</span></div>
-                    </div>
-                    <div class="pub-item">
-                        <div class="pub-meta">
-                            <span class="pub-tag">AReC 2026</span>
-                            <span class="pub-type">Conference Paper</span>
-                        </div>
-                        <h4>Mission Planning Simulation and Design Software Scaling</h4>
-                        <p class="pub-authors">Siewert, S., Martinez-Sanchez, A., et al.</p>
-                        <div class="pub-topics"><span>Robotics</span><span>Mission Planning</span><span>Simulation</span></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="container section">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">&#127950;</span>
-                        <h3>F1TENTH Autonomous Racing</h3>
+        <section id="projects" class="section light-section">
+            <div class="container">
+                <div class="section-label"><span class="mono">05 /</span> Projects</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">&#127950;</span>
+                            <div>
+                                <h3>F1TENTH Autonomous Racing</h3>
+                                <span class="project-status active">Active</span>
+                            </div>
+                        </div>
+                        <p>Built a 1/10-scale autonomous race car with a full multi-sensor stack (camera, LiDAR, IMU, wheel encoders), including soldering a custom power board and wiring harness. Developed an end-to-end autonomy pipeline (perception &rarr; planning &rarr; control) using Adaptive Pure Pursuit and EKF state estimation. Currently optimizing trajectory planning and overtaking behavior.</p>
+                        <div class="project-tech"><span>ROS2</span><span>LiDAR</span><span>IMU</span><span>Python</span><span>EKF</span><span>Pure Pursuit</span><span>Sensor Fusion</span></div>
                     </div>
-                    <p>Built a 1/10-scale autonomous race car with a full multi-sensor stack (LiDAR, IMU, Camera). Developed a complete perception-to-control pipeline using Adaptive Pure Pursuit and real-time sensor fusion for high-speed navigation.</p>
-                    <div class="project-tech"><span>ROS2</span><span>LiDAR</span><span>Python</span><span>Adaptive Pure Pursuit</span><span>Sensor Fusion</span></div>
-                </div>
-                <div class="project-card">
-                    <div class="project-header">
-                        <span class="project-icon">&#129529;</span>
-                        <h3>Autonomous Janitorial Robot</h3>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">&#129529;</span>
+                            <div>
+                                <h3>Autonomous Janitorial Robot</h3>
+                                <span class="project-status complete">Complete</span>
+                            </div>
+                        </div>
+                        <p>Deployed a TurtleBot3 Waffle with OpenMANIPULATOR-X arm to detect and retrieve trash autonomously. Implemented onboard perception using Raspberry Pi 4 + camera for trash detection, Arduino-controlled manipulation, and SLAM for real-time mapping and navigation.</p>
+                        <div class="project-tech"><span>ROS</span><span>SLAM</span><span>OpenCV</span><span>TurtleBot3</span><span>RPi-4</span><span>Arduino</span><span>Robot Manipulation</span></div>
                     </div>
-                    <p>Deployed TurtleBot3 with OpenMANIPULATOR-X to detect and retrieve trash using SLAM-based navigation and onboard visual perception for object localization and autonomous grasping.</p>
-                    <div class="project-tech"><span>ROS</span><span>SLAM</span><span>OpenCV</span><span>TurtleBot3</span><span>Robot Manipulation</span></div>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="bg-dark section">
+        <section id="contact" class="section dark-section">
             <div class="container contact-content">
+                <div class="section-label light"><span class="mono">06 /</span> Contact</div>
                 <h2 class="section-title light">Let&rsquo;s Connect</h2>
                 <p class="contact-sub">Open to research collaborations and industry opportunities in autonomous vehicles, computer vision, and robotics.</p>
                 <div class="contact-links">
@@ -263,7 +401,7 @@
 
     <footer>
         <div class="container footer-content">
-            <p>&copy; 2026 Angel Martinez-Sanchez &middot; PhD Researcher in Autonomous Vehicles</p>
+            <p><span class="mono">&copy;</span> 2026 Angel Martinez-Sanchez &middot; PhD Researcher &middot; Autonomous Vehicles</p>
         </div>
     </footer>
 
